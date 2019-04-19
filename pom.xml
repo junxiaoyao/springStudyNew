@@ -39,7 +39,7 @@
     <jacksonVsersion>2.9.8</jacksonVsersion>
   </properties>
   <build>
-    <!--<resources>
+    <resources>
       <resource>
         <directory>${basedir}/src/main/java</directory>
         <includes>
@@ -50,7 +50,7 @@
       <resource>
         <directory>${basedir}/src/main/resources</directory>
       </resource>
-    </resources>-->
+    </resources>
 
     <plugins>
       <plugin>
@@ -117,7 +117,21 @@
       <artifactId>spring-orm</artifactId>
       <version>${springVersion}</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
+    <!--<dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.9</version>
+    </dependency>
+    <dependency>
+      <groupId>cglib</groupId>
+      <artifactId>cglib</artifactId>
+      <version>3.2.10</version>
+    </dependency>-->
     <!--J2EE-->
   <dependency>
       <groupId>javax.servlet</groupId>
